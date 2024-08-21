@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link href="../styles/hamburgers.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>Guia da 405</title>
+</head>
+
+<body>
+    <header class="flex  justify-between p-4 items-center w-full md:h-12 bg-yellow-400">
+        <div id="logo" class="flex  items-center">
+            <img class="w-8" src="../images/favicon.png" alt="logo">
+            <span class="font-bold">Guia da 405</span>
+        </div>
+        <nav class="flex justify-center w-1/12 md:w-1/4">
+            <div class="hidden md:flex w-full">
+                <ul  class="flex justify-around w-full">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CDN</a></li>
+                    <li><a href="#">INSTALAÇÃO</a></li>
+                    <li><a href="#">EXEMPLOS</a></li>
+                </ul>
+            </div>
+
+            <div class="flex  md:hidden">
+                <button class="hamburger hamburger--collapse " type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <script src="../scripts/hamburger.js"></script>
+</body>
+
+</html>

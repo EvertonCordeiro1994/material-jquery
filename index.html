@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-    <link href="../styles/hamburgers.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="./styles/hamburgers.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> 
+
     <title>Guia da 405</title>
 </head>
 
 <body>
-    <header class="flex  justify-between p-4 items-center w-full md:h-12 bg-yellow-400">
+    <header class="flex  justify-between p-4 items-center w-full h-12 bg-yellow-400 fixed">
         <div id="logo" class="flex  items-center">
-            <img class="w-8" src="../images/favicon.png" alt="logo">
-            <span class="font-bold">Guia da 405</span>
+            <img class="w-8" src="./images/favicon.png" alt="logo">
+            <span class="font-bold text-2xl">Guia da 405</span>
         </div>
         <nav class="flex justify-center w-1/12 md:w-1/4">
             <div class="hidden md:flex w-full">
-                <ul  class="flex justify-around w-full">
+                <ul class="flex justify-around w-full">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">CDN</a></li>
-                    <li><a href="#">INSTALAÇÃO</a></li>
-                    <li><a href="#">EXEMPLOS</a></li>
+                    <li><a href="#">jQUERY</a></li>
                 </ul>
             </div>
 
@@ -36,8 +39,225 @@
             </div>
         </nav>
     </header>
+    <main class="w-full flex flex-col justify-center">
+        <section id="home" class="w-full flex  justify-center py-12 md:h-screen ">
+            <div class="flex flex-col md:flex-row w-full md:w-10/12  items-center md:justify-center">
+                <div class="w-4/5 md:w-3/5 text-center">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-6">Bem-vindo ao Guia da 405</h1>
 
-    <script src="../scripts/hamburger.js"></script>
+                    <p class="text-lg text-gray-600 mb-4 md:mb-0 text-center text-bold">
+                        Navegue pelo site, explore os conteúdos disponíveis e use o Guia da 405 como seu aliado nos
+                        estudos.
+                        Este é o nosso ponto de referência para reforçar o conhecimento e facilitar a jornada de
+                        aprendizado
+                        em front-end.
+                    </p>
+                </div>
+                <div class="flex items-center justify-center mt-6 md:mt-0 md:w-2/5 ">
+                    <img src="./images/personagens/SelfieDoodle.svg" alt="Ilustração" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="jquery" class="w-full flex justify-center py-12">
+            <div class="w-4/5 text-center">
+                <h1 class="hidden md:block text-6xl font-bold text-gray-800 mb-6">jQuery</h1>
+
+                <div class="flex flex-col-reverse md:flex-row w-11/12">
+
+                    <div class="w-full md:w-3/5 flex flex-col mt-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre o jQuery</h2>
+
+                        <p class="text-lg text-gray-600 mb-4">
+                            jQuery é uma das bibliotecas JavaScript mais populares, conhecida por simplificar a
+                            manipulação de
+                            elementos
+                            HTML, eventos, animações e chamadas AJAX. Com uma sintaxe simples e poderosa, jQuery permite
+                            que
+                            você
+                            escreva menos código e faça mais.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Utilizando jQuery, é possível criar interações dinâmicas e responsivas em suas páginas web
+                            com
+                            facilidade,
+                            tornando o desenvolvimento front-end mais acessível e eficiente. Sua compatibilidade com
+                            diferentes
+                            navegadores
+                            e vasta comunidade de suporte fazem do jQuery uma escolha confiável para projetos de todos
+                            os
+                            tamanhos.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-2/5 flex items-center justify-center">
+                        <img class="w-2/5 md:w-96 ml-0 md:ml-24"
+                            src="https://www.vectorlogo.zone/logos/jquery/jquery-vertical.svg" alt="logo jquery">
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="hidden md:block text-6xl font-bold text-gray-800 mb-6 mt-8">Como usar o jQuery</h1>
+                    <p class="text-lg text-gray-600 mb-4">Para usar jQuery em um documento HTML, você precisa incluir a
+                        biblioteca jQuery e então escrever código JavaScript que utilize jQuery para manipular o DOM e
+                        interagir com a página. Aqui estão os passos básicos:</p>
+
+                    <div>
+                        <h1>1. Incluir o jQuery no HTML</h1>
+                        <p>Você pode incluir o jQuery de duas maneiras: através de um CDN (Content Delivery Network) ou
+                            baixando a biblioteca e hospedando-a localmente.</p>
+                        <div>
+                            <p>Usando um CDN:</p>
+                            <code>
+                                    &lt;!-- Adicione a tag do CDN diretamente no &lt;head&gt; ou antes do fechamento da tag &lt;/body&gt; --&gt;
+                                </code>
+
+                            <div class="relative rounded-lg bg-yellow-400 p-4 w-96">
+                                <div class="relative flex text-start">
+                                    <div class="flex pl-3.5 pt-3 space-x-2">
+                                        <i class="fa-solid fa-circle" style="color: #ff2600;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #eeff00;"></i>
+                                        <i class="fa-solid fa-circle" style="color: #33ff00;"></i>
+                                    </div>
+                                    <span class="absolute inset-x-0 top-2 text-xs text-slate-500">Exemplo jQuery</span>
+                                </div>
+                                <div class="mt-5 space-y-1.5 px-5 pb-10">
+                                    <p class="mt-4 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span class="text-blue-900">!DOCTYPE
+                                            html</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-3 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span class="text-blue-900">html</span>
+                                        <span class="text-slate-500">lang<span
+                                                class="text-slate-500">=</span>"pt-BR"</span><span
+                                            class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">head</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-9 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span class="text-blue-900">meta</span>
+                                        <span class="text-violet-400">charset<span
+                                                class="text-slate-500">=</span>"UTF-8"</span><span
+                                            class="text-slate-500">/&gt;</span>
+                                    </p>
+                                    <p class="ml-9 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span class="text-blue-900">meta</span>
+                                        <span class="text-violet-400">name<span
+                                                class="text-slate-500">=</span>"viewport"<span
+                                                class="text-slate-500">content<span
+                                                    class="text-slate-500">=</span>"width=device-width,
+                                                initial-scale=1.0"</span></span><span
+                                            class="text-slate-500">/&gt;</span>
+                                    </p>
+                                    <p class="ml-9 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">title</span><span
+                                            class="text-slate-500">&gt;</span><span class="text-violet-400">Exemplo
+                                            jQuery</span><span class="text-slate-500">&lt;/</span><span
+                                            class="text-blue-900">title</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">head</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">body</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-9 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">button</span> <span class="text-violet-400">id<span
+                                                class="text-slate-500">=</span>"myButton"</span><span
+                                            class="text-slate-500">&gt;</span><span class="text-violet-400">Clique em
+                                            mim</span><span class="text-slate-500">&lt;/</span><span
+                                            class="text-blue-900">button</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-9 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span class="text-blue-900">p</span>
+                                        <span class="text-violet-400">id<span
+                                                class="text-slate-500">=</span>"myParagraph"</span><span
+                                            class="text-slate-500">&gt;</span><span class="text-violet-400">Texto
+                                            inicial</span><span class="text-slate-500">&lt;/</span><span
+                                            class="text-blue-900">p</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">body</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                    <p class="ml-6 font-mono text-xs font-normal tracking-wide text-violet-400">
+                                        <span class="text-slate-500">&lt;</span><span
+                                            class="text-blue-900">html</span><span class="text-slate-500">&gt;</span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                                <h2 class="text-2xl font-bold mb-4"> CDN do jQuery</h2>
+
+                                <div class="flex items-center space-x-4">
+                                    <code class="bg-gray-100 p-2 rounded-lg text-sm text-gray-700">
+                                            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"&gt;&lt;/script&gt;
+                                        </code>
+                                    <button id="copy-btn" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Copiar
+                                        Tag</button>
+                                </div>
+                                <p id="copy-msg" class="text-green-500 mt-2 hidden">Tag copiada para a área de
+                                    transferência!
+                                </p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <p>Hospedando localmente:</p>
+                            <p>Você pode baixar o jQuery do site oficial e incluir a biblioteca no seu projeto. Em
+                                seguida, adicione a tag do script apontando para o arquivo local:</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./scripts/hamburger.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<p class="text-lg text-gray-600 mb-4">
+    O Guia 405 é um guia básico que criei para ajudar a nossa turma de estudos de front-end. Aqui, você
+    encontrará respostas rápidas e diretas para as dúvidas mais comuns sobre as matérias que estamos
+    aprendendo. Meu objetivo é tornar o aprendizado de front-end mais acessível e simples, oferecendo um
+    recurso prático para que todos possam revisar conceitos e esclarecer dúvidas de forma fácil.
+</p> -->
